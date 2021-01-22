@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Canin калкулатор</title>
+    <link rel="icon" type="image/png" href="images/logoTitle.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="start()">
+    <script src="script.js"></script>
+
+
+    <section class="logo-section">
+        <img src="images/dogOne.jpg" class="dogOne">
+        <img src="images/logo.png" class="logo">
+        <img src="/images/dogTwo.jpg" class="dogTwo">
+
+    </section>
+
+    <div class="yearSel-section" id="yearSel-section">
+        <span> Възрастта на вашето куче е на възраст: </span>
+        <select id="selectYear" class="selectYear-list">
+            <option>моля, изберете</option>
+        </select>
+        <input class="button" type="button" onclick="selectYearButton()" value="ИЗБЕРИ" />
+    </div>
+
+    <div class="yearSel-section" id="foodSel-section">
+        <output type="text" id="selFoodMess"></output>
+        <select id="selectFood" class="selectYear-list">
+            <option>моля, изберете</option>
+        </select>
+        <input class="button" type="button" onclick="selectFoodButton()" value="ИЗБЕРИ" />
+    </div>
+
+    <div class="yearSel-section" id="lastSel-section">
+        <section>
+        <output type="text" id="lastMessFirst"></output>
+        <select id="selectFirst" class="selectYear-list">
+            <option>моля, изберете</option>
+        </select>
+    </section>
+    <section></section>
+        <output type="text" id="lastMessSecond"></output>
+        <select id="selectSecond" class="selectYear-list">
+            <option>моля, изберете</option>
+        </select>
+    </section>
+        <input class="button" type="button" onclick="selectLast()" value="ИЗБЕРИ" />
+    </div>
+
+    <div id="result">
+        <label class="description-label">ОПИСАНИЕ: </label>
+        <img id="image" class="image">
+        <output type ="text" id="description"></output>
+        <br>
+        <section id="daylyDose">
+            <br>
+            <label class="description-label">ДНЕВНА ДАЖБА: </label>
+            <output type ="text" id="resultValue"></output>
+        </section>
+
+        <section id="adultSeries">
+            <br>
+            <output type ="text" id="resultAdult"></output>
+            <img id="imageAdult" class="image">
+        
+        </section>
+    </div>
+
+    <div class="start">
+        <img src="images/dog2.jpg" class="dog2" id="dog2">
+        <p class="textMessage" id="textMessage"> Не забравяй да ми даваш ежедневната порция пълноценна храна! </p>
+        <input  type="button" id="startButton" class="start-button" onclick="window.location.href='index.html'"
+                value="НАЧАЛО" />
+    </div>
+</body>
+
+</html>
